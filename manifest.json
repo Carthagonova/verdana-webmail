@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Custom Font Style for Webmail",
+    "description": "Aplica un estilo de fuente Verdana a todas las etiquetas <div> con clase 'pre'. en Roundcube",
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://webmail.sanchezdonate.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "favicon.png"
+    }
+  }
+  
